@@ -11,25 +11,30 @@
 </head>
 
 <body>
-    <nav class="flex justify-between items-center shadow-xl">
-        <div class="navlogo ms-28 my-4">
-            <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
-        </div>
-        <ul class="flex justify-evenly text-sm">
-            <li><a href="#" class="pe-5 font-bold text-red-700">Home</a></li>
-            <li><a href="#" class="pe-5">Celebrity Gosip</a></li>
-            <li><a href="#" class="pe-5">Entertainment</a></li>
-            <li><a href="#" class="pe-5">Net Worth</a></li>
-            <li><a href="#" class="pe-5">Salary</a></li>
-            <li><a href="#" class="pe-5">Wiki</a></li>
-            <li><a href="#" class="pe-5">Biography</a></li>
-            <li><a href="#" class="pe-5">About</a></li>
-            <li><a href="#" class="pe-20">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="flex justify-between items-center shadow-xl">
+            <div class="navlogo ms-28 my-4">
+                <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
+            </div>
+            <ul class="flex justify-evenly text-sm">
+                <li><a href="#" class="pe-5 font-bold text-red-700">Home</a></li>
+                <li><a href="#" class="pe-5">Celebrity Gosip</a></li>
+                <li><a href="#" class="pe-5">Entertainment</a></li>
+                <li><a href="#" class="pe-5">Net Worth</a></li>
+                <li><a href="#" class="pe-5">Salary</a></li>
+                <li><a href="#" class="pe-5">Wiki</a></li>
+                <li><a href="#" class="pe-5">Biography</a></li>
+                <li><a href="#" class="pe-5">About</a></li>
+                <li><a href="#" class="pe-20">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- gossip part -->
-    <div class="container mx-auto p-5">
+    </header>
+  
+
+    <main class="mb-16">
+        <!-- gossip part -->
+    <div class="container mx-auto py-5 px-24">
         <!-- Recent Update Section -->
         <div class="mb-8">
             <h1 class="text-3xl font-bold mb-5">Recent Update</h1>
@@ -115,15 +120,17 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto p-5">
+     <!-- gossip part end-->
+
+      <!-- Blogs and article parts -->
+    <div class="container mx-auto py-5 px-24">
         <div class="grid  md:grid-cols-3 gap-8">
             <!-- All Blog Posts -->
             <div class="md:col-span-2">
                 <h2 class="text-2xl font-bold mb-4">All blog posts</h2>
                 <div class="flex-row flex-wrap flex justify-between">
                     <!-- Blog Post Item -->
-
-                    <div class="w-72 bg-white rounded-lg col-span-1">
+                    <div class="w-80 bg-white rounded-lg col-span-1">
                         <!-- <a href="#">
                             <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                         </a>
@@ -161,9 +168,7 @@
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
                     </div>
-
-
-                    <div class="w-72 bg-white rounded-lg col-span-1">
+                    <div class="w-80 bg-white rounded-lg col-span-1">
 
                         <img src="assests/img/wiki2.png" alt="Post Image"
                             class="w-full h-60 rounded-lg object-cover">
@@ -182,8 +187,7 @@
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
                     </div>
-
-                    <div class="w-72 bg-white rounded-lg col-span-1 md:mt-8 lg:mt-0">
+                    <div class="w-80 bg-white rounded-lg col-span-1 md:mt-8 lg:mt-8">
 
                         <img src="assests/img/wiki3.png" alt="Post Image"
                             class="w-full h-60 rounded-lg object-cover">
@@ -202,8 +206,7 @@
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
                     </div>
-
-                    <div class="w-72 bg-white rounded-lg col-span-1 mt-8">
+                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
 
                         <img src="assests/img/wiki4.png" alt="Post Image"
                             class="w-full h-60 rounded-lg object-cover">
@@ -222,9 +225,7 @@
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
                     </div>
-
-                    
-                    <div class="w-72 bg-white rounded-lg col-span-1 mt-8">
+                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
 
                         <img src="assests/img/wiki5.png" alt="Post Image"
                             class="w-full h-60 rounded-lg object-cover">
@@ -243,8 +244,7 @@
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
                     </div>
-
-                    <div class="w-72 bg-white rounded-lg col-span-1 mt-8">
+                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
 
                         <img src="assests/img/wiki6.png" alt="Post Image"
                             class="w-full h-60 rounded-lg object-cover">
@@ -262,31 +262,32 @@
 
                             <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
                         </div>
-                    </div>
-
-
-
-
-                    <!-- <div class="bg-white shadow-lg rounded-lg p-4 flex space-x-4">
-                            <img src="https://via.placeholder.com/150" alt="Post Image" class=" w-24 h-24 object-cover rounded-lg">
-                            <div>
-                                <div class="text-blue-500 text-sm font-bold uppercase mb-1">Celebrity Gossip</div>
-                                <h3 class="text-lg font-bold">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife | Dating</h3>
-                                <p class="text-gray-600 text-sm">Kate Bock is a popular model and actress who made her fame from her appearances...</p>
-                                <div class="text-red-500 text-sm">Tuesday, September 15th, 2020</div>
-                            </div>
-                        </div> -->
-                    <!-- Repeat similar blocks for other blog posts -->
-                    <!-- <div class="bg-white shadow-lg rounded-lg p-4 flex space-x-4">
-                            <img src="https://via.placeholder.com/150" alt="Post Image" class="w-24 h-24 object-cover rounded-lg">
-                            <div>
-                                <div class="text-blue-500 text-sm font-bold uppercase mb-1">Entertainment</div>
-                                <h3 class="text-lg font-bold">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife | Dating</h3>
-                                <p class="text-gray-600 text-sm">Kate Bock is a popular model and actress who made her fame from her appearances...</p>
-                                <div class="text-red-500 text-sm">Tuesday, September 15th, 2020</div>
-                            </div>
-                        </div> -->
+                    </div>   
                 </div>
+                    <!-- Pagination part -->
+                    <div class="flex flex-wrap  justify-between items-center mt-5">
+                        <div class="pre ">
+                            
+                            <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">
+                               Previous</button>
+
+                        </div>
+                        <div class="pg">
+                            <button class="px-4 py-2 bg-purple-100  border-purple-300 text-purple-700 rounded-md">1</button>
+                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">2</button>
+                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">3</button>
+                        <span class="px-4 py-2">...</span>
+                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">8</button>
+                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">9</button>
+                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">10</button>
+
+                        </div>
+                        <div class="next">
+                            <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">Next</button>
+                        </div>
+                      </div>
+
+
             </div>
 
             <!-- Top Articles -->
@@ -331,10 +332,28 @@
     </div>
 
 
-
     </main>
+    <hr>
 
-    <footer class="bg-white py-4 mt-16 shadow-md">
+    <!-- footer part -->
+    <footer class="bg-white py-4  shadow-md">
+
+        <nav class="flex justify-between items-center">
+            <div class="navlogo ms-28 my-4">
+                <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
+            </div>
+            <ul class="flex justify-evenly text-sm">
+                <li><a href="#" class="pe-5 font-bold text-red-700">Home</a></li>
+                <li><a href="#" class="pe-5">Celebrity Gosip</a></li>
+                <li><a href="#" class="pe-5">Entertainment</a></li>
+                <li><a href="#" class="pe-5">Net Worth</a></li>
+                <li><a href="#" class="pe-5">Salary</a></li>
+                <li><a href="#" class="pe-5">Wiki</a></li>
+                <li><a href="#" class="pe-5">Biography</a></li>
+                <li><a href="#" class="pe-5">About</a></li>
+                <li><a href="#" class="pe-20">Contact</a></li>
+            </ul>
+        </nav>
         <div class="container mx-auto flex justify-between items-center">
             <p class="text-gray-600 text-sm">&copy; 2023 All Rights Reserved. | <a href="#"
                     class="text-gray-600 hover:text-gray-800">Disclaimer</a> | <a href="#"
