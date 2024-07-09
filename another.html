@@ -11,17 +11,17 @@
 
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <style>
-          #mobile-menu {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background-color: white;
-        z-index: 10;
-    }
+        #mobile-menu {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            z-index: 10;
+        }
     </style>
 </head>
 
@@ -29,26 +29,31 @@
 
     <header>
         <nav class="flex justify-between items-center shadow-xl p-4">
-            <div class="navlogo ml-8">
+            <div class="navlogo md:ml-8 lg:ml-20">
                 <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
             </div>
             <div class="hidden md:block">
                 <ul class="flex justify-evenly text-sm">
-                    <li><a href="#" class="pr-5 font-bold text-red-700">Home</a></li>
-                    <li><a href="#" class="pr-5">Celebrity Gossip</a></li>
-                    <li><a href="#" class="pr-5">Entertainment</a></li>
-                    <li><a href="#" class="pr-5">Net Worth</a></li>
-                    <li><a href="#" class="pr-5">Salary</a></li>
-                    <li><a href="#" class="pr-5">Wiki</a></li>
-                    <li><a href="#" class="pr-5">Biography</a></li>
-                    <li><a href="#" class="pr-5">About</a></li>
-                    <li><a href="#" class="pr-20">Contact</a></li>
+                    <li><a href="index.html" class="pr-5 hover:font-bold hover:text-red-700">Home</a></li>
+                    <li><a href="celebrity.html" class="pr-5 hover:font-bold hover:text-red-700">Celebrity Gossip</a>
+                    </li>
+                    <li><a href="entertainment.html" class="pr-5 hover:font-bold hover:text-red-700">Entertainment</a>
+                    </li>
+                    <li><a href="net.html" class="pr-5 hover:font-bold hover:text-red-700">Net Worth</a></li>
+                    <li><a href="salary.html" class="pr-5 hover:font-bold hover:text-red-700">Salary</a></li>
+                    <li><a href="wiki.html" class="pr-5 hover:font-bold hover:text-red-700">Wiki</a></li>
+                    <li><a href="biography.html" class="pr-5 hover:font-bold hover:text-red-700">Biography</a></li>
+                    <li><a href="about.html" class="pr-5 hover:font-bold hover:text-red-700">About</a></li>
+                    <li><a href="contact.html" class="lg:pr-20 md:pr-5 hover:font-bold hover:text-red-700">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="md:hidden">
                 <button id="menu-button" class="focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
@@ -58,398 +63,300 @@
                 <a href="#" onclick="hideNavbar()" class="absolute top-2 right-2" id="times">
                     <i class="fas fa-times-square"></i>
                 </a>
-                <li><a href="#" class="p-3 inline-block font-bold text-red-700">Home</a></li>
-                <li><a href="#" class="p-3 inline-block">Celebrity Gossip</a></li>
-                <li><a href="#" class="p-3 inline-block">Entertainment</a></li>
-                <li><a href="#" class="p-3 inline-block">Net Worth</a></li>
-                <li><a href="#" class="p-3 inline-block">Salary</a></li>
-                <li><a href="#" class="p-3 inline-block">Wiki</a></li>
-                <li><a href="#" class="p-3 inline-block">Biography</a></li>
-                <li><a href="#" class="p-3 inline-block">About</a></li>
-                <li><a href="#" class="p-3 inline-block">Contact</a></li>
+                <li><a href="index.html" class="p-3 inline-block font-bold text-red-700">Home</a></li>
+                <li><a href="celebrity.html" class="p-3 inline-block">Celebrity Gossip</a></li>
+                <li><a href="entertainment.html" class="p-3 inline-block">Entertainment</a></li>
+                <li><a href="net.html" class="p-3 inline-block">Net Worth</a></li>
+                <li><a href="salary.html" class="p-3 inline-block">Salary</a></li>
+                <li><a href="wiki.html" class="p-3 inline-block">Wiki</a></li>
+                <li><a href="biography.html" class="p-3 inline-block">Biography</a></li>
+                <li><a href="about.html" class="p-3 inline-block">About</a></li>
+                <li><a href="contact.html" class="p-3 inline-block">Contact</a></li>
             </ul>
         </div>
     </header>
-    
-
-    <!-- <header>
-        <nav class="flex justify-between items-center shadow-xl">
-            <div class="navlogo ms-28 my-4">
-                <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
-            </div>
-            <ul class="flex justify-evenly text-sm">
-                <li><a href="#" class="pe-5 font-bold text-red-700">Home</a></li>
-                <li><a href="#" class="pe-5">Celebrity Gosip</a></li>
-                <li><a href="#" class="pe-5">Entertainment</a></li>
-                <li><a href="#" class="pe-5">Net Worth</a></li>
-                <li><a href="#" class="pe-5">Salary</a></li>
-                <li><a href="#" class="pe-5">Wiki</a></li>
-                <li><a href="#" class="pe-5">Biography</a></li>
-                <li><a href="#" class="pe-5">About</a></li>
-                <li><a href="#" class="pe-20">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header> -->
-  
-    <main class="mb-16">
-        <!-- gossip part -->
-    <div class="container mx-auto py-5 px-24">
-        <!-- Recent Update Section -->
-        <div class="mb-8">
-            <h1 class="text-3xl font-bold mb-5">Recent Update</h1>
-            <div class="grid md:grid-cols-3 gap-5">
-                <!-- Main Article -->
-                <div class="md:col-span-2 bg-white rounded-lg ">
-                    <img src="assests/img/Kate Bock wiki.jpg" alt="Main Article Image"
-                        class="w-full h-72 object-cover rounded-lg mb-5">
-                    <div class="text p-3">
-                        <span
-                            class="text-blue-700 text-sm md:text-xs font-semibold mb-5 bg-blue-100 px-3 py-2 rounded-full tracking-wide">Entertainment</span>
-                        <h2 class="text-3xl font-semibold my-3">Kate Bock Biography Wiki, Married, Net worth, Height,
-                            Dating, Family</h2>
-                        <p class="text-gray-700 mb-3 text-justify md:text-sm">Kate Bock is a popular model and actress
-                            who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the year
-                            2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her local
-                            swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
-                            made.... &nbsp;<a href=""><span
-                                    class="transition-colors duration-300 delay-150 hover:duration-300 text-green-600 text-sm font-semibold mb-3 rounded-full  hover:text-purple-500 tracking-wide">Continue
-                                    Reading</span></a></p>
 
 
-                        <div class="text-red-500 mt-5 text-sm font-semibold">Tuesday, September 15th, 2020</div>
-                    </div>
 
-                </div>
-                <!-- Side Articles -->
-                <div class="space-y-6">
-                    <!-- Article 1 -->
-                    <div class="">
+    <main class="mb-16 mt-10">
 
-                        <div class="bg-white  rounded-lg p-2 flex items-start space-x-4">
-                            <img src="assests/img/david charvet net worth.jpg" alt="Side Article Image"
-                                class="md:w-24 md:h-24 w-32 h-32 object-cover rounded-lg">
-                            <div>
-                                <span
-                                    class="text-purple-700 text-sm md:text-xs  font-semibold mb-1 bg-purple-100 py-1 px-3  rounded-full tracking-wide ">Celebrity
-                                    Gossip</span>
-                                <h3 class="text-base md:text-sm  font-semibold mb-1 mt-2 text-justify">David Charvet Bio
-                                    | Wiki | Married | Age | Height | Net Worth | Wife</h3>
-                                <p class="text-gray-700  md:text-xs   mb-3 text-justify">Kate Bock is a popular model
-                                    and actress who made her.. </p>
-                                <div class="text-red-500 font-semibold text-sm md:text-xs ">Tuesday, September 15th,
-                                    2020</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Article 2 -->
-
-                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
-                        <img src="assests/img/david charvet net worth.jpg" alt="Side Article Image"
-                            class="md:w-24 md:h-24  w-32 h-32 object-cover rounded-lg">
-                        <div>
-                            <span
-                                class="text-red-500 text-sm md:text-xs  font-semibold mb-1 bg-red-100  py-1 px-3 rounded-full tracking-wide">Net
-                                Worth</span>
-                            <h3 class="text-base md:text-sm  font-semibold mb-1 mt-1 text-justify">Darren John Boyd Bio
-                                | Wiki | Married | Age | Net worth | Wife </h3>
-                            <p class="text-gray-700 mb-3  md:text-xs  text-justify">Kate Bock is a popular model and
-                                actress who made her.. </p>
-                            <div class="text-red-500 font-semibold text-sm md:text-xs ">Tuesday, September 15th, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Article 3 -->
-                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
-                        <img src="assests/img/david charvet net worth.jpg" alt="Side Article Image"
-                            class=" md:w-24 md:h-24  w-32 h-32 object-cover rounded-lg">
-                        <div>
-                            <span
-                                class="text-pink-500 text-sm md:text-xs  font-semibold mb-2 bg-pink-100  py-1 px-3 rounded-full tracking-wide">Television</span>
-                            <h3 class="text-base md:text-sm font-semibold mb-1 mt-2 text-justify">Darren John Boyd Bio |
-                                Wiki | Married | Age | Net worth | Wife</h3>
-                            <p class="text-gray-700 mb-3  md:text-xs   text-justify">Kate Bock is a popular model and
-                                actress who made her.. </p>
-                            <div class="text-red-500 font-semibold text-sm md:text-xs ">Tuesday, September 15th, 2020
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <!-- gossip part end-->
-
-      <!-- Blogs and article parts -->
-    <div class="container mx-auto py-5 px-24">
-        <div class="grid  md:grid-cols-3 gap-8">
-            <!-- All Blog Posts -->
-            <div class="md:col-span-2">
-                <h2 class="text-2xl font-bold mb-4">All blog posts</h2>
-                <div class="flex-row flex-wrap flex justify-between">
-                    <!-- Blog Post Item -->
-                    <div class="w-80 bg-white rounded-lg col-span-1">
-                        <!-- <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Noteworthy technology acquisitions 2021</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div> -->
-                        <img src="assests/img/wiki1.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="w-80 bg-white rounded-lg col-span-1">
-
-                        <img src="assests/img/wiki2.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="w-80 bg-white rounded-lg col-span-1 md:mt-8 lg:mt-8">
-
-                        <img src="assests/img/wiki3.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
-
-                        <img src="assests/img/wiki4.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
-
-                        <img src="assests/img/wiki5.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="w-80 bg-white rounded-lg col-span-1 mt-8">
-
-                        <img src="assests/img/wiki6.png" alt="Post Image"
-                            class="w-full h-60 rounded-lg object-cover">
-                        <div class="p-2">
-                            <span
-                                class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                Gossip</span>
-                            <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                Age | Net worth | Wife | Dating</h3>
-                            <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                fame from her appearances...</p>
-
-
-                            </a>
-
-                            <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>   
-                </div>
-                    <!-- Pagination part -->
-                    <div class="flex flex-wrap  justify-between items-center mt-5">
-                        <div class="pre ">
-                            
-                            <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">
-                               Previous</button>
-
-                        </div>
-                        <div class="pg">
-                            <button class="px-4 py-2 bg-purple-100  border-purple-300 text-purple-700 rounded-md">1</button>
-                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">2</button>
-                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">3</button>
-                        <span class="px-4 py-2">...</span>
-                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">8</button>
-                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">9</button>
-                        <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">10</button>
-                        </div>
-                        <div class="next">
-                            <button class="px-4 py-2 bg-white  rounded-md hover:bg-gray-100">Next</button>
-                        </div>
-                      </div>
-            </div>
-            <!-- Top Articles -->
-            <div>
-                <h2 class="text-2xl font-bold mb-4">Top Article</h2>
-                <div class="">
-                    <!-- Top Article Item -->
-                    <div class="bg-white flex space-x-4">
-                        <img src="assests/img/top1.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-purple-500 text-sm md:text-xs  font-semibold bg-purple-100  py-1 px-3 rounded-full tracking-wide">Net Worth</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <!-- Repeat similar blocks for other top articles -->
-                    <div class="bg-white mt-8 flex space-x-4">
-                        <img src="assests/img/top2.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-blue-500 text-sm md:text-xs font-semibold mb-1  bg-blue-100  py-1 px-3 rounded-full tracking-wide">Celebrity Gossip</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="bg-white mt-8 flex space-x-4">
-                        <img src="assests/img/top3.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-blue-500 text-sm md:text-xs  font-semibold mb-1 bg-blue-100  py-1 px-3 rounded-full tracking-wide">Celebrity Gossip</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="bg-white mt-8 flex space-x-4">
-                        <img src="assests/img/top4.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-blue-500 text-sm md:text-xs  font-semibold mb-1  bg-blue-100  py-1 px-3 rounded-full tracking-wide">Celebrity Gossip</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="bg-white mt-8 flex space-x-4">
-                        <img src="assests/img/wiki5.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-blue-500 text-sm md:text-xs  font-semibold mb-1 bg-blue-100  py-1 px-3 rounded-full tracking-wide">Celebrity Gossip</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                    <div class="bg-white mt-8 flex space-x-4">
-                        <img src="assests/img/wiki4.png" alt="Article Image"
-                            class="w-24 h-24 object-cover rounded-lg">
-                        <div>
-                            <span class="text-blue-500 md:text-xs text-sm font-semibold mb-1 bg-blue-100  py-1 px-3 rounded-full tracking-wide">Celebrity Gossip</span>
-                            <h3 class="text-base font-semibold my-1">Darren John Boyd Bio | Wiki | Married | Age | Net worth | Wife
-                                | Dating</h3>
-                            <div class="text-red-500 font-semibold text-sm">Tuesday, September 15th, 2020</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    </main>
-    <hr>
-
-    <main class="mb-16">
         <!-- gossip part -->
         <div class="container mx-auto py-5 px-4 md:px-24">
             <!-- Recent Update Section -->
             <div class="mb-8">
-                <h1 class="text-3xl font-bold mb-5">Recent Update</h1>
-                <div class="grid md:grid-cols-3 gap-5">
+
+
+
+                <div class="grid md:grid-cols-0 lg:grid-cols-3 gap-5">
                     <!-- Main Article -->
-                    <div class="md:col-span-2 bg-white rounded-lg">
+
+                    <div class="md:col-span-0 lg:col-span-2 bg-white rounded-lg">
+                        <h2 class="text-3xl font-semibold mb-5">Kate Bock Biography Wiki | Married | Net worth | Height
+                            |
+                            Dating | Family</h2>
                         <img src="assests/img/Kate Bock wiki.jpg" alt="Main Article Image"
                             class="w-full h-72 object-cover rounded-lg mb-5">
-                        <div class="text p-3">
-                            <span
-                                class="text-blue-700 text-sm md:text-xs font-semibold mb-5 bg-blue-100 px-3 py-2 rounded-full tracking-wide">Entertainment</span>
-                            <h2 class="text-3xl font-semibold my-3">Kate Bock Biography Wiki, Married, Net worth, Height,
-                                Dating, Family</h2>
-                            <p class="text-gray-700 mb-3 text-justify md:text-sm">Kate Bock is a popular model and actress
-                                who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the year
-                                2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her local
-                                swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
-                                made.... &nbsp;<a href=""><span
-                                        class="transition-colors duration-300 delay-150 hover:duration-300 text-green-600 text-sm font-semibold mb-3 rounded-full hover:text-purple-500 tracking-wide">Continue
-                                        Reading</span></a></p>
-                            <div class="text-red-500 mt-5 text-sm font-semibold">Tuesday, September 15th, 2020</div>
+                        <div class="">
+                            <div class="flex justify-between">
+                                <span
+                                    class="text-blue-700 text-lg md:text-sm font-semibold bg-blue-100 px-3 py-2 rounded-full tracking-wide">Entertainment</span>
+                                <div class="icon">
+                                    <a href="">
+                                        <i
+                                            class="fab fa-facebook-square text-2xl text-blue-700 hover:animate-spin mr-3"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fab fa-twitter-square text-2xl text-blue-700 hover:animate-spin"></i>
+                                    </a>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <ul class="mt-3">
+                                <li><span class="font-bold">Name : </span>David Charvet</li>
+                                <li><span class="font-bold">Full Name : </span>David Franck Guex Charvet</li>
+                                <li><span class="font-bold">Date of Birth : </span>May 15, 1972</li>
+                                <li><span class="font-bold">Age : </span> 48 years</li>
+                                <li><span class="font-bold">Birth Place : </span>Lyon, France</li>
+                                <li><span class="font-bold">Zodiac Sign : </span>Taurus</li>
+                                <li><span class="font-bold">Nationality : </span>French</li>
+                                <li><span class="font-bold">Marital Status : </span>Divorced</li>
+                                <li><span class="font-bold">Height : </span>6 feet</li>
+                                <li><span class="font-bold">Hair Color : </span>Light Brown</li>
+                                <li><span class="font-bold">Eye Color : </span>Blue</li>
+                                <li><span class="font-bold">Children : </span>Daughters Heaven Rain Charvet and Shaya
+                                    Braven Charvet</li>
+                                <li><span class="font-bold"> Parents : </span>Paul Guez and Christiane Charvet</li>
+                                <li><span class="font-bold">Profession : </span>Actor, Singer, Model, TV personality
+                                </li>
+                                <li><span class="font-bold">Net worth : </span>$30 million</li>
+                            </ul>
+                            <div class="body-contain mt-3">
+                                <h2 class="font-bold text-xl tracking-wider">Synopsis</h2>
+
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Birth</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Education and Early Life</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Family Life</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Professional Career</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Personal Life</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Body Measurements</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Wiki facts</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Net worth and Salary</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+                                <h2 class="font-bold mt-3 text-xl tracking-wider">Social Media</h2>
+    
+                                <p class="text-gray-700 my-3 text-justify text-base">Kate Bock is a popular model and
+                                    actress
+                                    who made her fame from her appearance in the Sports Illustrated Swimsuit Issue from the
+                                    year
+                                    2013 to 2019. Kate commenced her modeling at an early age when she got spotted at her
+                                    local
+                                    swimming pool. Moreover, she has worked for renowned fashion wear Victoria’s Secret and
+                                    made Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ducimus dolorum
+                                    delectus iusto soluta excepturi nesciunt sed dicta rerum? Ea sit possimus corrupti
+                                    cupiditate velit mollitia modi dicta asperiores excepturi?Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Iure, pariatur. Quam numquam ipsa exercitationem inventore
+                                    laborum dolores! Voluptas distinctio a at fugiat repudiandae rem veniam sapiente
+                                    cupiditate, magni nesciunt quos. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ullam aliquam unde quis praesentium ut alias quod velit autem accusantium
+                                    blanditiis recusandae nam a inventore dolor nulla laborum, incidunt assumenda
+                                    perferendis!
+                                </p>
+
+                            </div>
+                          
+                            <div class="text-red-500 mt-5 text-base font-semibold">Tuesday, September 15th, 2020</div>
                         </div>
+
                     </div>
                     <!-- Side Articles -->
+
                     <div class="space-y-6">
+
                         <!-- Article 1 -->
+                        <form class="max-w-md mx-auto">
+                            <label for="default-search"
+                                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search"
+                                    class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Search your favorite celebrity " required />
+                                <button type="submit"
+                                    class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                            </div>
+                        </form>
                         <div class="bg-white rounded-lg p-2 flex items-start space-x-4">
                             <img src="assests/img/david charvet net worth.jpg" alt="Side Article Image"
                                 class="md:w-24 md:h-24 w-32 h-32 object-cover rounded-lg">
@@ -457,11 +364,13 @@
                                 <span
                                     class="text-purple-700 text-sm md:text-xs font-semibold mb-1 bg-purple-100 py-1 px-3 rounded-full tracking-wide">Celebrity
                                     Gossip</span>
-                                <h3 class="text-base md:text-sm font-semibold mb-1 mt-2 text-justify">David Charvet Bio |
+                                <h3 class="text-base md:text-base font-semibold mb-1 mt-2 text-justify">David Charvet
+                                    Bio |
                                     Wiki | Married | Age | Height | Net Worth | Wife</h3>
-                                <p class="text-gray-700 md:text-xs mb-3 text-justify">Kate Bock is a popular model and actress
+                                <p class="text-gray-700 md:text-sm mb-3 text-justify">Kate Bock is a popular model and
+                                    actress
                                     who made her.. </p>
-                                <div class="text-red-500 font-semibold text-sm md:text-xs">Tuesday, September 15th,
+                                <div class="text-red-500 font-semibold text-sm md:text-sm">Tuesday, September 15th,
                                     2020</div>
                             </div>
                         </div>
@@ -473,11 +382,13 @@
                                 <span
                                     class="text-red-500 text-sm md:text-xs font-semibold mb-1 bg-red-100 py-1 px-3 rounded-full tracking-wide">Net
                                     Worth</span>
-                                <h3 class="text-base md:text-sm font-semibold mb-1 mt-1 text-justify">Darren John Boyd Bio |
+                                <h3 class="text-base md:text-base font-semibold mb-1 mt-1 text-justify">Darren John Boyd
+                                    Bio |
                                     Wiki | Married | Age | Net worth | Wife </h3>
-                                <p class="text-gray-700 mb-3 md:text-xs text-justify">Kate Bock is a popular model and actress
+                                <p class="text-gray-700 mb-3 md:text-sm text-justify">Kate Bock is a popular model and
+                                    actress
                                     who made her.. </p>
-                                <div class="text-red-500 font-semibold text-sm md:text-xs">Tuesday, September 15th, 2020
+                                <div class="text-red-500 font-semibold text-sm md:text-sm">Tuesday, September 15th, 2020
                                 </div>
                             </div>
                         </div>
@@ -488,126 +399,164 @@
                             <div>
                                 <span
                                     class="text-pink-500 text-sm md:text-xs font-semibold mb-2 bg-pink-100 py-1 px-3 rounded-full tracking-wide">Television</span>
-                                <h3 class="text-base md:text-sm font-semibold mb-1 mt-2 text-justify">Darren John Boyd Bio |
+                                <h3 class="text-base md:text-base font-semibold mb-1 mt-2 text-justify">Darren John Boyd
+                                    Bio |
                                     Wiki | Married | Age | Net worth | Wife</h3>
-                                <p class="text-gray-700 mb-3 md:text-xs text-justify">Kate Bock is a popular model and actress
+                                <p class="text-gray-700 mb-3 md:text-sm text-justify">Kate Bock is a popular model and
+                                    actress
                                     who made her.. </p>
-                                <div class="text-red-500 font-semibold text-sm md:text-xs">Tuesday, September 15th, 2020
+                                <div class="text-red-500 font-semibold text-sm md:text-sm">Tuesday, September 15th, 2020
                                 </div>
                             </div>
                         </div>
+
+                        <div class="sidebar p-4">
+                            <h2 class="text-2xl font-bold mb-4">Top Article</h2>
+                            <!-- Repeat similar block for other popular posts -->
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top1.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top2.png" alt="Post Image"
+                                        class="w-full  md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top3.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top4.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold my-1">Darren John Boyd Bio | Wiki |
+                                            Married | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-smfont-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top1.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top1.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-120 mb-8 lg:mt-8">
+                                <div class="flex flex-col md:flex-row items-start md:space-x-4 space-y-4 md:space-y-0">
+                                    <img src="assests/img/top1.png" alt="Post Image"
+                                        class="w-full md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover rounded-lg">
+                                    <div class="flex flex-col">
+                                        <h3 class="lg:text-sm md:text-base font-semibold">Darren John Boyd Bio | Wiki | Married
+                                            | Age | Net worth | Wife | Dating</h3>
+                                        <div class="text-red-500 lg:text-xs md:text-sm font-semibold mt-2">Tuesday, September
+                                            15th, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
                     </div>
                 </div>
             </div>
         </div>
         <!-- gossip part end-->
-    
+
         <!-- Blogs and article parts -->
         <div class="container mx-auto py-5 px-4 md:px-24">
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- All Blog Posts -->
-                <div class="md:col-span-2">
-                    <h2 class="text-2xl font-bold mb-4">All blog posts</h2>
-                    <div class="flex-row flex-wrap flex justify-between">
-                        <!-- Blog Post Item -->
-                        <div class="w-full md:w-80 bg-white rounded-lg col-span-1 mb-8 md:mb-0">
-                            <img src="assests/img/wiki1.png" alt="Post Image"
-                                class="w-full h-60 rounded-lg object-cover">
-                            <div class="p-2">
-                                <span
-                                    class="text-blue-500 text-sm md:text-xs font-semibold uppercase mb-2 bg-blue-100 py-1 px-3 rounded-full tracking-wide">Celebrity
-                                    Gossip</span>
-                                <h3 class="text-base font-semibold tracking-wide mt-2">Darren John Boyd Bio | Wiki | Married |
-                                    Age | Net worth | Wife | Dating</h3>
-                                <p class="text-gray-600 text-sm mt-2">Kate Bock is a popular model and actress who made her
-                                    fame from her appearances...</p>
-                                <div class="text-red-500 text-sm font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                            </div>
-                        </div>
-                        <!-- Repeat similar blocks for other blog posts -->
-                        <!-- Pagination part -->
-                        <div class="flex flex-wrap justify-between items-center mt-5 w-full">
-                            <div class="pre">
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">
-                                    Previous
-                                </button>
-                            </div>
-                            <div class="pg flex space-x-2">
-                                <button class="px-4 py-2 bg-purple-100 border-purple-300 text-purple-700 rounded-md">1</button>
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">2</button>
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">3</button>
-                                <span class="px-4 py-2">...</span>
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">8</button>
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">9</button>
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">10</button>
-                            </div>
-                            <div class="next">
-                                <button class="px-4 py-2 bg-white rounded-md hover:bg-gray-100">
-                                    Next
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Pagination part end -->
-                    </div>
-                </div>
+            <div class="grid md:grid-cols-0 lg:grid-cols-3 gap-8">
+              
+
                 <!-- Sidebar -->
-                <div class="sidebar">
-                    <h2 class="text-2xl font-bold mb-4">Popular Posts</h2>
-                    <!-- Repeat similar block for other popular posts -->
-                    <div class="w-full md:w-72 mb-8 md:mb-0">
-                        <div class="flex items-start space-x-4">
-                            <img src="assests/img/Chrissy-Metz.jpg" alt="Post Image"
-                                class="md:w-20 md:h-20 w-28 h-28 object-cover rounded-lg">
-                            <div class="flex flex-col">
-                                <h3 class="text-sm font-semibold">Chrissy Metz's Incredible Weight Loss Journey</h3>
-                                <div class="text-red-500 text-xs font-semibold mt-2">Tuesday, September 15th, 2020</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+               
                 <!-- Sidebar end -->
             </div>
         </div>
         <!-- Blogs and article parts end -->
     </main>
+    <hr>
 
     <!-- footer part -->
-    <footer class="bg-white py-4  shadow-md">
-
-        <nav class="flex justify-between items-center">
-            <div class="navlogo ms-28 my-4">
+    <footer class="bg-white py-4">
+        <nav class="flex flex-col md:flex-row justify-between items-center">
+            <div class="navlogo md:ms-28 my-4">
                 <img src="assests/img/logo-small.png" alt="navlogo" class="w-24 animate-bounce">
             </div>
-            <ul class="flex justify-evenly text-sm">
-                <li><a href="#" class="pe-5 font-bold text-red-700">Home</a></li>
-                <li><a href="#" class="pe-5">Celebrity Gosip</a></li>
-                <li><a href="#" class="pe-5">Entertainment</a></li>
-                <li><a href="#" class="pe-5">Net Worth</a></li>
-                <li><a href="#" class="pe-5">Salary</a></li>
-                <li><a href="#" class="pe-5">Wiki</a></li>
-                <li><a href="#" class="pe-5">Biography</a></li>
-                <li><a href="#" class="pe-5">About</a></li>
-                <li><a href="#" class="pe-20">Contact</a></li>
+            <ul class="flex flex-wrap pe-2 justify-evenly text-sm">
+                <li><a href="index.html" class="pe-2 hover:font-bold hover:text-red-700">Home</a></li>
+                <li><a href="celebrity.html" class="pe-2 hover:font-bold hover:text-red-700">Celebrity Gossip</a></li>
+                <li><a href="entertainment.html" class="pe-2 hover:font-bold hover:text-red-700">Entertainment</a></li>
+                <li><a href="net.html" class="pe-2 hover:font-bold hover:text-red-700">Net Worth</a></li>
+                <li><a href="salary.html" class="pe-2 hover:font-bold hover:text-red-700">Salary</a></li>
+                <li><a href="net.html" class="pe-2 hover:font-bold hover:text-red-700">Wiki</a></li>
+                <li><a href="biography.html" class="pe-2 hover:font-bold hover:text-red-700">Biography</a></li>
+                <li><a href="about.html" class="pe-2 hover:font-bold hover:text-red-700">About</a></li>
+                <li><a href="contact.html" class="pe-2 hover:font-bold hover:text-red-700">Contact</a></li>
             </ul>
         </nav>
-        <div class="container mx-auto flex justify-between items-center">
-            <p class="text-gray-600 text-sm ms-28">&copy; 2023 All Rights Reserved. | <a href="#"
-                    class="text-gray-600 hover:text-gray-800">Disclaimer</a> | <a href="#"
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center mt-3">
+            <p class="text-gray-600 text-sm m-5 md:ms-20 text-center md:text-left">&copy; 2023 All Rights Reserved. | <a
+                    href="#" class="text-gray-600 hover:text-gray-800">Disclaimer</a> | <a href="#"
                     class="text-gray-600 hover:text-gray-800">Copyright Terms & Conditions</a></p>
-            <p class="text-gray-600 text-sm me-10">By using our website, you agree to our <a href="#"
-                    class="text-gray-600 hover:text-gray-800">Terms of Use</a> and <a href="#"
+
+            <p class="text-gray-600 text-sm m-5 md:ms-20 text-center md:text-left">By using our website, you agree to
+                our <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Use</a> and <a href="#"
                     class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
                 <br>
                 Powered solely by code. Crafted by <a href="#" class="text-gray-600 hover:text-gray-800">Creative
                     Content Limited</a>
                 <br>
-                Designed by: <a href="#" class="text-gray-600 hover:text-gray-800"></a>
+                Designed by: <a href="#" class="text-gray-600 font-bold hover:text-gray-800">Binod Tamang</a>
             </p>
         </div>
     </footer>
 
     <script>
-        document.getElementById('menu-button').addEventListener('click', function() {
+        document.getElementById('menu-button').addEventListener('click', function () {
             var mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.remove('hidden');
@@ -616,7 +565,7 @@
             }
         });
 
-        document.getElementById('times').addEventListener('click', ()=>{
+        document.getElementById('times').addEventListener('click', () => {
             let mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.add('hidden');
         })
